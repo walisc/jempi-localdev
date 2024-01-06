@@ -15,7 +15,32 @@ const AppConsts = {
                 
             }
 
+        },
+        linker: {
+            appPath: "JeMPI_Linker",
+            mainClass: "org.jembi.jempi.linker.Main",
+            appEnv: {
+                KAFKA_CLIENT_ID: "linker-kafka",
+                
+            }
+
+        },
+        api: {
+            appPath: "JeMPI_API",
+            mainClass: "org.jembi.jempi.api.API",
+            appEnv: {
+                KAFKA_CLIENT_ID: "api-kafka"  
+            }
+        },
+        apikc: {
+            appPath: "JeMPI_API_KC",
+            mainClass: "org.jembi.jempi.api.APIKC",
+            appEnv: {
+                KAFKA_CLIENT_ID: "apikc-kafka"
+            }
+
         }
+
     },
 
 } 
