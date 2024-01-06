@@ -1,3 +1,4 @@
 {
-    "jempiRootPath": "<aPath>"
+    "jempiRootPath": "<aPath>",
+    "jempiAppPath": "JeMPI_Apps"
 }

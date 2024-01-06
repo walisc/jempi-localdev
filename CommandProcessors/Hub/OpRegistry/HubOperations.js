@@ -8,11 +8,6 @@ class HubOperations extends BaseOperations{
         this.utils = HubUtils
         this.composeFilePath = HubConsts.HUB_COMPOSER_FILE_PATH
     }
-
-    IsHubIsRunning(){
-        // Assuming at leat one port binding
-        return this.processRunner(`docker compose -f ${this.composeFilePath} ps`).toString().includes("0.0.0.0:")
-    }
 }
 
 module.exports = HubOperations
