@@ -24,7 +24,9 @@ class RunOp extends AppOperations{
 
         const runCommand = this.GetMvnRunCommand()
         console.log(`Running app start command '${runCommand}'`)
-        this.processRunner(runCommand, {stdio: "inherit", cwd: this.appPath, env: {...this.GetRunEnv(), ...(this.appDetails.appEnv ? this.appDetails.appEnv : {})}})
+        this.processRunner(runCommand, {stdio: "inherit", cwd: this.appPath, env: {...this.GetRunEnv(), 
+                                                                                    ...(this.appDetails.appEnv ? this.appDetails.appEnv : {}),
+                                                                                    ...(this.settings.appEnv && this.appName in this.settings.appEnv ? this.settings.appEnv[this.appName] : {})}})
     }
 }
 

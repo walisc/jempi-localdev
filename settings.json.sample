@@ -1,4 +1,15 @@
 {
     "jempiRootPath": "<aPath>",
-    "jempiAppPath": "JeMPI_Apps"
+    "jempiAppPath": "JeMPI_Apps",
+     "uiEnv": {
+        "REACT_APP_SHOW_BRAND_LOGO": false
+    },
+    "appEnv": {
+        "async_reciever": {
+            "UPLOAD_CSV_PATH": "a/path/csv_uploads"
+        }, 
+        "api": {
+            "UPLOAD_CSV_PATH": "a/path/csv_uploads"
+        }
+    }
 }
