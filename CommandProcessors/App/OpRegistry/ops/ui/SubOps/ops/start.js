@@ -59,7 +59,7 @@ class StartOp extends UIAppOperations{
                                 addContent(path.resolve(this.outputDir, "index.html"), "</title>", `<script defer src="${this.bundleName}"></script>`)
     
                                 replacer(path.resolve(this.outputDir, "config-template.json"), 
-                                            { ...HubUtils.GetHubEnv(), ...this.utils.GetUiEnv() }, "${", "}", 
+                                            { ...HubUtils.GetHubEnv(), ...this.utils.GetUiEnv(), ...(this.settings.uiEnv ? this.settings.uiEnv : {})}, "${", "}", 
                                             path.resolve(this.outputDir,  "config.json"))
                                 firstEmitDone = true
                             }

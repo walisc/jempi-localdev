@@ -39,8 +39,14 @@ const AppConsts = {
                 KAFKA_CLIENT_ID: "apikc-kafka"
             }
 
+        },
+        bootstrapper: {
+            appPath: "JeMPI_Bootstrapper",
+            mainClass: "org.jembi.jempi.bootstrapper.BootstrapperCLI",
+            appEnv: {
+                KAFKA_CLIENT_ID: "bootstrapper-kafka"
+            }
         }
-
     },
 
 } 

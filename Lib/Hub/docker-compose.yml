@@ -51,9 +51,9 @@ services:
     volumes:
       - 'postgres_data:/conf'
     environment:
-      POSTGRESQL_USERNAME: 'admin'
-      POSTGRESQL_PASSWORD: 'admin'
-      POSTGRESQL_DATABASE: 'jempi-local'
+      POSTGRESQL_USERNAME: 'postgres'
+      POSTGRESQL_PASSWORD: 'postgres'
+      POSTGRESQL_DATABASE: 'notifications'
       ALLOW_EMPTY_PASSWORD: 'no'
     networks:
       - dgraph-network
