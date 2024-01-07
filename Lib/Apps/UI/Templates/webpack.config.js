@@ -1,4 +1,4 @@
-const CoreConsts = require("../../Core/Utils/Consts");
+const CoreConsts = require("../../../Core/Utils/Consts");
 const path = require("path");
 
 const baseConfig = {
