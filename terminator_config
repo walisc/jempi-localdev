@@ -22,7 +22,7 @@
       fullscreen = False
       size = 2490, 1016
       title = JEMPI LOCAL DEV
-      last_active_term = 9cbcb38b-fcda-41db-b538-53e16e3668ca
+      last_active_term = a1a4f00b-83d5-418d-98b4-57015383906c
       last_active_window = True
     [[[child1]]]
       type = HPaned
@@ -30,83 +30,96 @@
       order = 0
       position = 735
       ratio = 0.29577464788732394
-    [[[terminal2]]]
-      type = Terminal
+    [[[child2]]]
+      type = VPaned
       parent = child1
+      order = 0
+      position = 506
+      ratio = 0.5004945598417408
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
       order = 0
       profile = default
       uuid = a1a4f00b-83d5-418d-98b4-57015383906c
-    [[[child3]]]
+      title = LINKER (jempiLocalDev app run linker)
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      title = ETL (jempiLocalDev app run etl)
+      uuid = eb939c35-0625-4aa6-9b5d-4ada46b75392
+    [[[child5]]]
       type = VPaned
       parent = child1
       order = 1
       position = 197
       ratio = 0.19485657764589515
-    [[[terminal4]]]
+    [[[terminal6]]]
       type = Terminal
-      parent = child3
+      parent = child5
       order = 0
       profile = default
-      uuid = 9cbcb38b-fcda-41db-b538-53e16e3668ca
       title = HUB (jempiLocalDev hub up)
-    [[[child5]]]
+      uuid = 9cbcb38b-fcda-41db-b538-53e16e3668ca
+    [[[child7]]]
       type = VPaned
-      parent = child3
+      parent = child5
       order = 1
       position = 408
       ratio = 0.5043263288009888
-    [[[child6]]]
+    [[[child8]]]
       type = HPaned
-      parent = child5
+      parent = child7
       order = 0
       position = 619
       ratio = 0.35472779369627505
-    [[[terminal7]]]
-      type = Terminal
-      parent = child6
-      order = 0
-      profile = default
-      uuid = f5d7efa7-f194-4d64-b0b9-d4f7d53b4600
-      title = API (jempiLocalDev app run api)
-    [[[child8]]]
-      type = HPaned
-      parent = child6
-      order = 1
-      position = 562
-      ratio = 0.5013380909901873
     [[[terminal9]]]
       type = Terminal
       parent = child8
       order = 0
       profile = default
-      uuid = 6699114e-4d4e-4b6e-9537-755b52c984fa
-      title = CONTROLLER (jempiLocalDev app run controller)
-    [[[terminal10]]]
-      type = Terminal
+      title = API (jempiLocalDev app run api)
+      uuid = f5d7efa7-f194-4d64-b0b9-d4f7d53b4600
+    [[[child10]]]
+      type = HPaned
       parent = child8
       order = 1
-      profile = default
-      uuid = 6b285e65-c6c0-48da-9197-c0920b76e20f
-      title = ASYNC_RECIEVER (jempiLocalDev app run async_reciever)
-      command = ""
-    [[[child11]]]
-      type = HPaned
-      parent = child5
-      order = 1
-      position = 872
-      ratio = 0.4997134670487106
-    [[[terminal12]]]
+      position = 816
+      ratio = 0.727921498661909
+    [[[terminal11]]]
       type = Terminal
-      parent = child11
+      parent = child10
       order = 0
       profile = default
-      uuid = 1d141322-536f-44f5-8342-a56bed7a02bc
-      title = UI (jempiLocalDev app ui start)
-    [[[terminal13]]]
+      title = CONTROLLER (jempiLocalDev app run controller)
+      uuid = 6699114e-4d4e-4b6e-9537-755b52c984fa
+    [[[terminal12]]]
       type = Terminal
-      parent = child11
+      parent = child10
       order = 1
       profile = default
-      uuid = 9cbf75f8-e78e-4989-98ab-acd1fa1f305f
+      title = ASYNC_RECIEVER (jempiLocalDev app run async_reciever)
+      uuid = 6b285e65-c6c0-48da-9197-c0920b76e20f
+    [[[child13]]]
+      type = HPaned
+      parent = child7
+      order = 1
+      position = 873
+      ratio = 0.5002865329512894
+    [[[terminal14]]]
+      type = Terminal
+      parent = child13
+      order = 0
+      profile = default
+      title = UI (jempiLocalDev app ui start)
+      uuid = 1d141322-536f-44f5-8342-a56bed7a02bc
+    [[[terminal15]]]
+      type = Terminal
+      parent = child13
+      order = 1
+      profile = default
       title = BOOTSTRAPPER (jempiLocalDev app data data resetAll)
+      uuid = 9cbf75f8-e78e-4989-98ab-acd1fa1f305f
 [plugins]

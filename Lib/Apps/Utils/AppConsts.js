@@ -7,6 +7,13 @@ const AppConsts = {
                 KAFKA_CLIENT_ID: "async-kafka"
             }
         },
+        etl: {
+            appPath: "JeMPI_ETL",
+            mainClass: "org.jembi.jempi.etl.Main",
+            appEnv: {
+                KAFKA_CLIENT_ID: "etl-kafka"
+            }
+        },
         controller: {
             appPath: "JeMPI_Controller",
             mainClass: "org.jembi.jempi.controller.Main",
@@ -14,7 +21,6 @@ const AppConsts = {
                 KAFKA_CLIENT_ID: "controller-kafka",
                 
             }
-
         },
         linker: {
             appPath: "JeMPI_Linker",
