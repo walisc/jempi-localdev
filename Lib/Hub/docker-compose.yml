@@ -3,7 +3,7 @@ services:
   dgraph:
     image: dgraph/standalone:latest
     volumes:
-      - ./dgraph:/dgraph
+      - dgraph_data:/dgraph
     ports:
       - "8080:8080"
       - "9080:9080"
@@ -73,6 +73,8 @@ volumes:
   kafka_data:
     driver: local
   postgres_data:
+    driver: local
+  dgraph_data:
     driver: local
 
 networks:
