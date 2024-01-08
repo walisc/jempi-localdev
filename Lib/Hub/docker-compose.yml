@@ -7,6 +7,11 @@ services:
     ports:
       - "8080:8080"
       - "9080:9080"
+    networks:
+      - dgraph-network
+  dgraph-ratel:
+    image: dgraph/ratel:latest
+    ports:
       - "8000:8000"
     networks:
       - dgraph-network
