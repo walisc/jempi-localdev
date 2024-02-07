@@ -79,7 +79,7 @@ class StartOp extends UIAppOperations{
               },
         })
         
-        server.listen(3030, 'localhost', (err) => {
+        server.listen(3030, "0.0.0.0", (err) => {
             if (err) {
               console.error(err);
             }

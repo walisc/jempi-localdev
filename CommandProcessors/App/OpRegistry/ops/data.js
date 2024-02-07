@@ -11,7 +11,7 @@ class DataOp extends AppOperations{
     }
 
     GetMvnRunCommand(){
-        return `mvn ${["compile", 
+        return `${this.GetMavenPath()} ${["compile", 
                 "exec:java", `-Dexec.mainClass="${this.appDetails.mainClass}"`, 
                 `-Dexec.workingdir="${this.appPath}"`,
                 `-Dexec.args="${this.args.join(" ")}"`].join(" ")}`
