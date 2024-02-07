@@ -1,6 +1,8 @@
 {
     "jempiRootPath": "<aPath>",
     "jempiAppPath": "JeMPI_Apps",
+    "javaHome": "a/path/java",
+    "mavenHome": "a/path/mvn",
      "uiEnv": {
         "REACT_APP_SHOW_BRAND_LOGO": false
     },
